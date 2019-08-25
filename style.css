@@ -3,6 +3,10 @@ body {
     font-family: "Lato", sans-serif;
     text-align: center;
   }
+
+  .sidebar a.active{
+    background-color:rgb(43,161,99) !important;
+  }
   
   .sidebar {
     margin: 0;
@@ -43,13 +47,6 @@ body {
 
   div.content {
     margin-left: 150px;
-    height: 100%;
-  }
-
-  .main {
-    padding: 50px 350px;
-    height: 100vh;
-    width: auto;
   }
 
   #home, #portfolio, #contact, #about {
@@ -61,6 +58,7 @@ body {
 
   #portfolio {
     background-color: rgb(96,215,169);
+    height: 100vh;
   }
   .card-img-top {
     height: 152px;
