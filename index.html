@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://kit.fontawesome.com/16e7ff6190.js"></script>
   </head>
   <body>
 
@@ -17,27 +17,44 @@
         <!--Menu sidebar-->
         <div class="sidebar">
             <div class="avatar"></div>
-            <a id='homeButton'class="menu-item menu-nav active" href="#home">Home</a>
-            <a id='portfolioButton'class="menu-item menu-nav" href="#portfolio">Portfolio</a>
-            <a id='contactButton'class="menu-item menu-nav" href="#contact">Contact</a>
-            <a id='aboutButton'class="menu-item menu-nav" href="#about">About</a>
+            <a id='homeButton'class="menu-item menu-nav active" href="#home">
+              <i class="fas fa-home fa-2x"></i>
+              <p>Home</p>
+            </a>
+            <a id='portfolioButton'class="menu-item menu-nav" href="#portfolio">
+              <i class="fas fa-briefcase fa-2x"></i>
+              <p>Portfolio</p>
+            </a>
+            <a id='contactButton'class="menu-item menu-nav" href="#contact">
+              <i class="fas fa-address-card fa-2x"></i>
+              <p>Contact</p>
+            </a>
+            <a id='aboutButton'class="menu-item menu-nav" href="#about">
+              <i class="fas fa-user-tie fa-2x"></i>
+              <p>About</p>
+            </a>
         </div>
 
         <!--Main content-->
         <div class="content">
+
+          <!--********************Home*************************-->
           <div class="main" id="home" style="display: none">
+
             <h1>Hi, I'm Duc Khang Nguyen</h1>
             <p>Full-time Web developer</p>
             <p>Part-time photographer</p>
           </div>
 
-          <div class="main" id="portfolio">
+          <!--********************Portfolio*************************-->
+          <div class="main" id="portfolio" style="display: none">
             <div class="container">
               <div class="row">
                 <div class="col-xs-0 col-sm-0 col-md-1"></div>
                 <div class="col-xs-12 col-sm-12 col-md-10">
                   <div class="row">
                     <div class="col">
+                      <i class="fas fa-briefcase fa-5x"></i>
                       <h1>Portfolio</h1>
                     </div>
                   </div>
@@ -70,7 +87,6 @@
                               <p class="card-text">Game of Thrones theme word guess game</p>
                             </div>
                           </div>
-                          
                     </div>
                   </div>
                 </div>
@@ -78,6 +94,183 @@
               </div>
             </div>
           </div>
+
+          <!--********************Contact*************************-->
+          <div class="main" id="contact" style="display: none">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                    <i class="fas fa-address-card fa-5x"></i>
+                    <h1>Contact</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                    <h5 class="text-background">Reach Me</h5>
+                  <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>Based in Houston, Texas, USA</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="fas fa-phone fa-2x"></i>
+                        <p>Tel: +1 713-277-8137</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <p>Gmail: duckhang2210@gmail.com</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="fas fa-check-circle fa-2x"></i>
+                        <p>Freelance Available</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                    <h5 class="text-background">Leave me a message</h5>
+                      <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-10">
+                            <form>
+                                <div class="form-row">
+                                  <div class="form-group col-sm-6">
+                                      <label for="exampleInputEmail1">Email address</label>
+                                      <input type="email" class="form-control" id="emailInput" placeholder="Enter email" required>
+                                  </div>
+                                  
+                                  <div class="form-group col-sm-6">
+                                      <label for="exampleInputEmail1">Name</label>
+                                      <input type="text" class="form-control" id="nameInout" placeholder="Can i have your name please?" required>
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                        <label for="exampleFormControlTextarea1">Message</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea required>
+                                      </div>
+                                </div>
+                  
+                                <button type="button" class="btn btn-dark" id="sendButton">
+                                  <p>Send</p>
+                                </button>
+                        
+                              </form>
+                        </div>
+                        <div class="col-sm-1"></div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--********************About*************************-->
+          <div class="main" id="about" style="display: block">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <i class="fas fa-user-tie fa-5x"></i>
+                  <h1>About Me</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h5 class="text-background">Get to know me</h5>
+                  <div class="row">
+                    <div class="col">
+                      <p>Hey beautiful! Yeah you, whoever's reading this!</p>
+                      <p>Hi there, My name is Khang, born and raised in Viet Nam. I'm a full-stack web developer graduated from UT-Houston Coding Bootcamp.</p>
+                      <p>I decided to become a web developer is because I love the feeling when I built something and other people like it. Especialy when it's a website, which can be used by anyone, anywhere.<br>
+                      <p>So stop swiping left! Jump right to my portfolio site, and leave me a message right now to hire me.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h5 class="text-background">Skills</h5>
+                  <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                      <p id="front">Front-end</p>
+                      <div class="row">
+                        <div class="col d-flex justify-content-center skills-icon-holder">
+                          <div class="skill-icon">
+                            <p>CSS 3</p>
+                            <i class="fab fa-css3-alt fa-2x"></i>
+                          </div>
+                          <div class="skill-icon">
+                            <p>HTML 5</p>
+                            <i class="fab fa-html5 fa-2x"></i>
+                          </div>
+                          <div class="skill-icon">
+                            <p>Bootstrap 4</p>
+                            <i class="fab fa-bootstrap fa-2x"></i>
+                          </div>
+                          <div class="skill-icon">
+                            <p>JavaScript</p>
+                            <i class="fab fa-js fa-2x"></i>
+                          </div>
+                          <div class="skill-icon">
+                            <p>jQuery</p>
+                            <i class="fab fa-js fa-2x"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p id="back">Back-end</p>
+                      <div class="row">
+                          <div class="col d-flex justify-content-center skills-icon-holder">
+                              <div class="skill-icon">
+                                <p>Node JS</p>
+                                <i class="fab fa-node-js fa-2x"></i>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <h5 class="text-background">Let's socialize</h5>
+                          <div class="row">
+                            <div class="col d-flex justify-content-center">
+                              <a class="skill-icon" target="blank" href="https://www.facebook.com/khang.burn.7">
+                                <p>Facebook</p>
+                                <i class="fab fa-facebook fa-2x"></i>
+                              </a>
+                              <a class="skill-icon" target="blank" href="https://www.instagram.com/nduc_kh/">
+                                <p>Instagram</p>
+                                <i class="fab fa-instagram fa-2x"></i>
+                              </a>
+                              <a class="skill-icon" target="blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=duckhang2210@gmail.com">
+                                <p>Gmail</p>
+                                <i class="fab fa-google fa-2x"></i>
+                              </a>
+                              <a class="skill-icon" target="blank" href="https://www.linkedin.com/in/khang-nguyen-606b62128">
+                                <p>LinkedIn</p>
+                                <i class="fab fa-linkedin fa-2x"></i>
+                              </a>
+                              <a class="skill-icon" target="blank" href="https://github.com/duckhang2210">
+                                <p>Github</p>
+                                <i class="fab fa-github fa-2x"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
 
     </div>
