@@ -1,7 +1,7 @@
 $(document).ready(function() {
     "use strict";
   
-    $('div.sidebar > a').click(function(e) {
+    $('div.sidebar > div.sidebar-container a').click(function(e) {
       e.preventDefault();
       $('div.sidebar > a').removeClass('active');
       $(this).addClass('active');
