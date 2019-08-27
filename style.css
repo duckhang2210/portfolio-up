@@ -54,13 +54,8 @@ body {
     padding: 16px;
     text-decoration: none;
   }
-   
-  .sidebar a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
   
-  .sidebar a:hover:not(.active), .sidebar a:hover:not(.active) p {
+  #sendButton p, .sidebar a.active, .sidebar a:hover:not(.active), .sidebar a:hover:not(.active) p {
     color: white;
   }
   
@@ -168,7 +163,8 @@ body {
       position: fixed;
       top: 0;
       z-index: 99;
-      padding-left: 15%;
+      display: flex;
+      justify-content: center;
     }
     p {
       font-size: 14px;
@@ -176,6 +172,7 @@ body {
     .sidebar a {
       height: auto;
       float: left;
+      
     }
 
     div.content {
@@ -193,9 +190,7 @@ body {
       text-align: center;
       float: none;
     }
-    p {
-      font-size: 14px;
-    }
+    
   }
 
 
