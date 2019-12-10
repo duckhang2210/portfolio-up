@@ -8,10 +8,6 @@ const front = [
     icon: 'fab fa-html5 fa-2x'
   },
   {
-    skill: 'Bootstrap',
-    icon: 'fab fa-bootstrap fa-2x'
-  },
-  {
     skill: 'Javascript',
     icon: 'fab fa-js fa-2x'
   },
@@ -45,10 +41,6 @@ const back = [
   {
     skill: 'MongoDB',
     icon: 'fab fa-envira fa-2x'
-  },
-  {
-    skill: 'Express Js',
-    icon: 'fab fa-etsy fa-2x'
   }
 ];
 
