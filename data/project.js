@@ -14,11 +14,18 @@ const projects = [
     linkDemo: 'https://duckhang2210.github.io/RPG-Multiplayer/'
   },
   {
-    title: 'Word Guess Game',
-    subtitle: 'Game of Thrones theme word guess game',
-    image: 'public/image/hangman.PNG',
-    linkGit: 'https://github.com/duckhang2210/Word-Guess-Game.git',
-    linkDemo: 'https://duckhang2210.github.io/Word-Guess-Game/'
+    title: 'Newsnap',
+    subtitle: 'Scrape latest news from CBR website',
+    image: 'public/image/newsnap.PNG',
+    linkGit: 'https://github.com/duckhang2210/newsnap.git',
+    linkDemo: 'https://newsnap-scrapper.herokuapp.com/'
+  },
+  {
+    title: 'PTYou',
+    subtitle: 'A social media for fitness lovers',
+    image: 'public/image/ptu.PNG',
+    linkGit: 'https://github.com/duckhang2210/project-3.git',
+    linkDemo: 'https://ptyou-mern.herokuapp.com/'
   }
 ];
 
