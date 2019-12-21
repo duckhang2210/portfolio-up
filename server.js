@@ -73,7 +73,7 @@ const accessToken = oauth2Client
   .then(credentials => credentials.access_token);
 
 const transporter = nodemailer.createTransport({
-  // host: 'smtp.gmail.com',
+  host: 'smtp.gmail.com',
   service: 'gmail',
   auth: {
     type: 'OAuth2',
